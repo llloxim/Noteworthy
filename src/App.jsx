@@ -1,11 +1,9 @@
-import "./App.css";
 import React from 'react';
 import {
 	BrowserRouter,
 	Routes,
 	Route
   } from "react-router-dom";
-import Nav from "./nav";
 import Home from './Home';
 import About from './About';
 import Gallery from './gallery';
@@ -15,8 +13,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
-							
+      <BrowserRouter>	
 							<Routes>
 								<Route path="/" element={<Home/>}/>
 								<Route path="/About" element={<About/>}/>

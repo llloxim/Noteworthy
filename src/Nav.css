@@ -1,4 +1,4 @@
-ul {
+.Nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -6,9 +6,10 @@ ul {
   margin: 0;
   }
 
-li {
+.link {
     list-style: none;
 }
+
 a{
     text-transform: uppercase;
     font-weight: bold;
@@ -34,4 +35,8 @@ a:hover {
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+nav{
+  background-color: #93bbed;
 }

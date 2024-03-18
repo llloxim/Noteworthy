@@ -6,18 +6,18 @@ function Nav() {
     return (
       <>
       <nav>
-            <ul>
+            <ul className='Nav'>
                 <Link to={`/`} className="Toolbar"><img src={logo} className="logo" alt="logos"/></Link>
-                <li>
+                <li className='link'>
                     <Link to={`/`} className="Toolbar">Home</Link>
                 </li>
-                <li>
+                <li className='link'>
                     <Link to={`/About`} className="Toolbar">About</Link>
                 </li>
-                <li>
+                <li className='link'>
                     <Link to={`/Gallery`} className="Toolbar">Gallery</Link>
                 </li>
-                <li>
+                <li className='link'>
                     <Link to={`/Members`} className="About">Members</Link>
                 </li>
             </ul>

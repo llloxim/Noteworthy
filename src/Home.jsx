@@ -1,3 +1,4 @@
+import "./App.css";
 import Nav from "./nav";
 
 function Home() {
