@@ -1,0 +1,8 @@
+.vid {
+    max-width: 700px;
+    max-height: 700px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}

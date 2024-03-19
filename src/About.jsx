@@ -2,6 +2,7 @@ import "./About.css";
 import Nav from "./nav";
 import Flyer from "/Flyer.png";
 import SF from "/SFhall.jpg";
+import { SocialIcon } from 'react-social-icons'
 function About() {
 
     return (
@@ -30,10 +31,10 @@ function About() {
                 <h1>Follow Us</h1>
                 <h4>Please e-mail our business manager at noteworthy@ucchoral.berkeley.edu and fill out this form. Then we’ll respond to you with a quote as soon as possible. In your email, let us know:</h4>
                 <div className="grid-container">
-                    <div className="grid-item"><a className="button" href="https://www.youtube.com/channel/UCDyMtV5cuuJZrg5Wm7VZmMA" target="_blank">form</a></div>
-                    <div className="grid-item"><a className="button" href="https://www.instagram.com/cal_noteworthy/" target="_blank">form</a></div>
-                    <div className="grid-item"><a className="button" href="https://www.facebook.com/Noteworthy" target="_blank">form</a></div>
-                    <div className="grid-item"><a className="button" href="https://www.tiktok.com/@uc_noteworthy" target="_blank">form</a></div>
+                    <div className="grid-item"><a className="button" href="https://www.youtube.com/channel/UCDyMtV5cuuJZrg5Wm7VZmMA" target="_blank"><SocialIcon url="https://youtube.com" /></a></div>
+                    <div className="grid-item"><a className="button" href="https://www.instagram.com/cal_noteworthy/" target="_blank"><SocialIcon url="https://www.instagram.com" /></a></div>
+                    <div className="grid-item"><a className="button" href="https://www.facebook.com/Noteworthy" target="_blank"><SocialIcon url="https://www.facebook.com" /></a></div>
+                    <div className="grid-item"><a className="button" href="https://www.tiktok.com/@uc_noteworthy" target="_blank"><SocialIcon url="https://www.tiktok.com" /></a></div>
                 </div>
             </div>
         </div>
