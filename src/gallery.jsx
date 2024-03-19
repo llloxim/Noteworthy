@@ -17,7 +17,7 @@ function Gallery() {
                     <img src="Flyer.png" />
                     <p className="legend">Legend 2</p>
                 </div>
-            </Carousel>
+        </Carousel>
             </div>
         </>
     );

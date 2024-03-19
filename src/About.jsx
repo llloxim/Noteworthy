@@ -1,7 +1,9 @@
 import "./About.css";
 import Nav from "./nav";
-import Flyer from "/Flyer.png";
+
 import SF from "/SFhall.jpg";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 import { SocialIcon } from 'react-social-icons'
 function About() {
 
@@ -17,7 +19,32 @@ function About() {
             <div className="sep">
                 <h1>Events</h1>
                 <h4>Please e-mail our business manager at noteworthy@ucchoral.berkeley.edu and fill out this form. Then we’ll respond to you with a quote as soon as possible. In your email, let us know:</h4>
-                <img src={Flyer} className="flyer" alt="fly"/>
+                <Carousel className="vid" showArrows={true}>
+                <div>
+                    <img src="Flyer.png" />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                    <img src="Flyer2.png" />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                    <img src="Flyer3.png" />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                    <img src="Flyer7.png" />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                    <img src="Flyer4.png" />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                    <img src="Flyer5.jpg" />
+                    <p className="legend">Legend 2</p>
+                </div>
+                </Carousel>
             </div>
             <div className="sep">
                 <h1>Hire Us</h1>
@@ -31,10 +58,10 @@ function About() {
                 <h1>Follow Us</h1>
                 <h4>Please e-mail our business manager at noteworthy@ucchoral.berkeley.edu and fill out this form. Then we’ll respond to you with a quote as soon as possible. In your email, let us know:</h4>
                 <div className="grid-container">
-                    <div className="grid-item"><a className="button" href="https://www.youtube.com/channel/UCDyMtV5cuuJZrg5Wm7VZmMA" target="_blank"><SocialIcon url="https://youtube.com" /></a></div>
-                    <div className="grid-item"><a className="button" href="https://www.instagram.com/cal_noteworthy/" target="_blank"><SocialIcon url="https://www.instagram.com" /></a></div>
-                    <div className="grid-item"><a className="button" href="https://www.facebook.com/Noteworthy" target="_blank"><SocialIcon url="https://www.facebook.com" /></a></div>
-                    <div className="grid-item"><a className="button" href="https://www.tiktok.com/@uc_noteworthy" target="_blank"><SocialIcon url="https://www.tiktok.com" /></a></div>
+                    <div className="grid-item"><a className="button" href="https://www.youtube.com/channel/UCDyMtV5cuuJZrg5Wm7VZmMA" target="_blank"><SocialIcon url="https://www.youtube.com/channel/UCDyMtV5cuuJZrg5Wm7VZmMA" /></a></div>
+                    <div className="grid-item"><a className="button" href="https://www.instagram.com/cal_noteworthy/" target="_blank"><SocialIcon url="https://www.instagram.com/cal_noteworthy/" /></a></div>
+                    <div className="grid-item"><a className="button" href="https://www.facebook.com/Noteworthy" target="_blank"><SocialIcon url="https://www.facebook.com/Noteworthy" /></a></div>
+                    <div className="grid-item"><a className="button" href="https://www.tiktok.com/@uc_noteworthy" target="_blank"><SocialIcon url="https://www.tiktok.com/@uc_noteworthy" /></a></div>
                 </div>
             </div>
         </div>
