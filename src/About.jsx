@@ -18,8 +18,8 @@ function About() {
         <div className="block">
             <div className="sep">
                 <h1>Events</h1>
-                <h4>Please e-mail our business manager at noteworthy@ucchoral.berkeley.edu and fill out this form. Then we’ll respond to you with a quote as soon as possible. In your email, let us know:</h4>
-                <Carousel className="vid" showArrows={true}>
+                <h4>Shows</h4>
+                <Carousel className="flyers" showArrows={true}>
                 <div>
                     <img src="Flyer.png" />
                     <p className="legend">Legend 2</p>
@@ -52,9 +52,8 @@ function About() {
                     <a className="form" href="https://docs.google.com/forms/d/e/1FAIpQLSexPGp4LpkvAaE66Kmh5EllvAaXQtPmGquz_1dDo9g2PZ01hg/viewform" target="_blank">form</a>
                     <img src={SF} className="sf" alt="fy"/>
                 </h4>
-                
-            </div>
-            <div className="sep">
+
+                <div className="sep">
                 <h1>Follow Us</h1>
                 <h4>Please e-mail our business manager at noteworthy@ucchoral.berkeley.edu and fill out this form. Then we’ll respond to you with a quote as soon as possible. In your email, let us know:</h4>
                 <div className="grid-container">
@@ -63,6 +62,8 @@ function About() {
                     <div className="grid-item"><a className="button" href="https://www.facebook.com/Noteworthy" target="_blank"><SocialIcon url="https://www.facebook.com/Noteworthy" /></a></div>
                     <div className="grid-item"><a className="button" href="https://www.tiktok.com/@uc_noteworthy" target="_blank"><SocialIcon url="https://www.tiktok.com/@uc_noteworthy" /></a></div>
                 </div>
+            </div>
+                
             </div>
         </div>
 

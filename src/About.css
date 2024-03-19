@@ -28,7 +28,6 @@
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-  background-color: #2196f3;
   padding: 10px;
 }
 
@@ -47,6 +46,5 @@
 }
 
 .flyers{
-  max-width: 30%;
-  max-height: 700px;
+  max-width: 1200px;
 }

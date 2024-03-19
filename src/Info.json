@@ -1,0 +1,18 @@
+{
+    "Name":{
+        "Bio": "Hi",
+        "Pic": "Backround.jpg",
+        "Semester": 6,
+        "Sem": 8,
+        "Major": "Chem",
+        "Intrests": "etc"
+    },
+    "Name2":{
+        "Bio": "Hi",
+        "Pic": "Backround.jpg",
+        "Semester": 6,
+        "sem": 8,
+        "Major": "Chem",
+        "Intrests": "etc"
+    }
+}
