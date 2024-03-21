@@ -1,0 +1,17 @@
+.itemNoC{
+    display: flex;
+    padding: 20px;
+}
+
+.profile{
+    max-width: 300px;
+    max-height: 300px;
+}
+.spacing{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.mtext{
+    padding: 3px;
+}

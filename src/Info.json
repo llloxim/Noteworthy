@@ -14,5 +14,37 @@
         "sem": 8,
         "Major": "Chem",
         "Intrests": "etc"
+    },
+    "Name3":{
+        "Bio": "Hi",
+        "Pic": "Backround.jpg",
+        "Semester": 6,
+        "sem": 8,
+        "Major": "Chem",
+        "Intrests": "etc"
+    },
+    "Name4":{
+        "Bio": "Hi",
+        "Pic": "Backround.jpg",
+        "Semester": 6,
+        "sem": 8,
+        "Major": "Chem",
+        "Intrests": "etc"
+    },
+    "Name5":{
+        "Bio": "Hi",
+        "Pic": "Backround.jpg",
+        "Semester": 6,
+        "sem": 8,
+        "Major": "Chem",
+        "Intrests": "etc"
+    },
+    "Name6":{
+        "Bio": "Hi",
+        "Pic": "Backround.jpg",
+        "Semester": 6,
+        "sem": 8,
+        "Major": "Chem",
+        "Intrests": "etc"
     }
 }

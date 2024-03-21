@@ -1,4 +1,5 @@
 import Info from './Info.json'
+import './cards.css'; 
 
 const ItemNoC = ({
 name,
@@ -10,6 +11,7 @@ major,
 intrests})=>{
     return(
         <div className="itemNoC">
+            <img className="profile" src={pic} alt={"./NW-Logo.png"} />
             <div className='description'>           
                 <h4 className='mtext'>{name}</h4>
 			    <h4 className='mtext'>{bio}</h4>
@@ -18,7 +20,6 @@ intrests})=>{
                 <h4 className='mtext'>{major}</h4>
                 <h4 className='mtext'>{intrests}</h4>
             </div>
-            <img className="img" src={pic} alt={"./NW-Logo.png"} />
 		</div>
     );
 };
@@ -42,7 +43,9 @@ const Card = ()=>{
     return(
         <div className="classM">
             <h1 className="card"> Card </h1>
+            <div className='spacing'>
             {itemList}
+            </div>
 		</div>
     );
 
