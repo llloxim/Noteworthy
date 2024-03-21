@@ -18,3 +18,27 @@
 .mtext{
     padding: 3px;
 }
+.popup-content {
+    margin: auto;
+    background: rgb(255, 255, 255);
+    width: 90%;
+    height: auto;
+    padding: 5px;
+  }
+.pop{
+    display: flex;
+}
+
+  .popup-arrow {
+    color: rgb(255, 255, 255);
+  }
+  [role='tooltip'].popup-content {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+  }
+  
+  .popup-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  [data-popup='tooltip'].popup-overlay {
+    background: transparent;
+  }

@@ -1,5 +1,6 @@
 import Info from './Info.json'
 import './cards.css'; 
+import Popup from 'reactjs-popup';
 
 const ItemNoC = ({
 name,
@@ -12,18 +13,28 @@ bio,
 howWasYourDay,
 pic})=>{
     return(
+        <Popup trigger={
+        <button>
         <div className="itemNoC">
+        <img className="profile" src={"./NW-Logo.png"} alt={"./NW-Logo.png"} />
+        <div className='description'>           
+            <h4 className='mtext'>{name}</h4>
+            <h4 className='mtext'>Promouns : {pronouns}</h4>
+            <h4 className='mtext'>Major/Minor : {majorsminors}</h4>
+            <h4 className='mtext'>Semester in Berkeley : {semesterInBerkeley}</h4>
+            <h4 className='mtext'>Semester in Noteworthy :{semesterInNoteworthy}</h4>
+            <h4 className='mtext'>Intrests : {interests}</h4>
+            <h4 className='mtext'>How Was Your Day? : {howWasYourDay}</h4>
+        </div>
+        </div>
+        </button>} position="center">
+    
+        
+        <div className='pop'>
             <img className="profile" src={"./NW-Logo.png"} alt={"./NW-Logo.png"} />
-            <div className='description'>           
-                <h4 className='mtext'>{name}</h4>
-			    <h4 className='mtext'>Promouns : {pronouns}</h4>
-                <h4 className='mtext'>Major/Minor : {majorsminors}</h4>
-                <h4 className='mtext'>Semester in Berkeley : {semesterInBerkeley}</h4>
-                <h4 className='mtext'>Semester in Noteworthy :{semesterInNoteworthy}</h4>
-                <h4 className='mtext'>Intrests : {interests}</h4>
-                <h4 className='mtext'>How Was Your Day? : {howWasYourDay}</h4>
-            </div>
-		</div>
+            <h2>Bio : {bio}</h2>
+        </div>
+        </Popup>
     );
 };
 
