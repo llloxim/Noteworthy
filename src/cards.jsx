@@ -3,22 +3,25 @@ import './cards.css';
 
 const ItemNoC = ({
 name,
+pronouns,
+majorsminors,
+semesterInBerkeley,
+semesterInNoteworthy,
+interests,
 bio,
-pic,
-semester,
-sem,
-major,
-intrests})=>{
+howWasYourDay,
+pic})=>{
     return(
         <div className="itemNoC">
-            <img className="profile" src={pic} alt={"./NW-Logo.png"} />
+            <img className="profile" src={"./NW-Logo.png"} alt={"./NW-Logo.png"} />
             <div className='description'>           
                 <h4 className='mtext'>{name}</h4>
-			    <h4 className='mtext'>{bio}</h4>
-                <h4 className='mtext'>{semester}</h4>
-                <h4 className='mtext'>{sem}</h4>
-                <h4 className='mtext'>{major}</h4>
-                <h4 className='mtext'>{intrests}</h4>
+			    <h4 className='mtext'>Promouns : {pronouns}</h4>
+                <h4 className='mtext'>Major/Minor : {majorsminors}</h4>
+                <h4 className='mtext'>Semester in Berkeley : {semesterInBerkeley}</h4>
+                <h4 className='mtext'>Semester in Noteworthy :{semesterInNoteworthy}</h4>
+                <h4 className='mtext'>Intrests : {interests}</h4>
+                <h4 className='mtext'>How Was Your Day? : {howWasYourDay}</h4>
             </div>
 		</div>
     );
@@ -31,18 +34,20 @@ const Card = ()=>{
         const name = Names[i];
         const info = Info[name];
         itemList.push(<ItemNoC 
-            name={name} 
-            bio={info.Bio} 
-            pic={info.Pic}
-            semester={info.Semester}
-            sem={info.Sem}
-            major={info.Major}
-            intrests={info.Intrests}
+            name={info.name} 
+            pronouns={info.pronouns} 
+            majorsminors={info.majorsminors}
+            semesterInBerkeley={info.semesterInBerkeley}
+            semesterInNoteworthy={info.semesterInNoteworthy}
+            interests={info.interests}
+            bio={info.bio}
+            howWasYourDay={info.howWasYourDay}
+            pic={info.pic} 
             />)
     }
     return(
         <div className="classM">
-            <h1 className="card"> Card </h1>
+            <h1 className="card"> Memebers </h1>
             <div className='spacing'>
             {itemList}
             </div>
