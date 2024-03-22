@@ -1,52 +1,52 @@
-.itemNoC{
-    display: flex;
-    padding: 20px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
+.itemNoC {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
 }
 
-.profile{
-    max-width: 300px;
-    max-height: 300px;
-    margin: 10px;
+.profile {
+  max-width: 300px;
+  max-height: 300px;
+  margin: 10px;
 }
-.spacing{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.spacing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-.mtext{
-    padding: 3px;
+.mtext {
+  padding: 3px;
 }
 .popup-content {
-    margin: auto;
-    background: #93bbed;
-    width: auto;
-    height: auto;
-    padding: 5px;
-  }
-.pop{
-    display: flex;
-    border:10px solid black;
+  margin: auto;
+  background: #93bbed;
+  width: auto;
+  height: auto;
+  padding: 5px;
+}
+.pop {
+  display: flex;
+  border: 10px solid black;
 }
 
-  .popup-arrow {
-    color: rgb(255, 255, 255);
-  }
-  [role='tooltip'].popup-content {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
-  }
-  
-  .popup-overlay {
-    background: rgba(0, 0, 0, 0.5);
-  }
-  [data-popup='tooltip'].popup-overlay {
-    background: transparent;
-  }
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+[role="tooltip"].popup-content {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
 
-.butt{
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup="tooltip"].popup-overlay {
+  background: transparent;
+}
+
+.butt {
   margin: 10px;
 }
