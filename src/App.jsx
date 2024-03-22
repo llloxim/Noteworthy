@@ -4,7 +4,6 @@ import Home from "./Home";
 import About from "./About";
 import Gallery from "./gallery";
 import Members from "./members";
-import Nav from "./Nav";
 
 function App() {
   return (
