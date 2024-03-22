@@ -4,11 +4,14 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin: 10px;
+    padding: 10px;
 }
 
 .profile{
     max-width: 300px;
     max-height: 300px;
+    margin: 10px;
 }
 .spacing{
     display: flex;
@@ -20,13 +23,14 @@
 }
 .popup-content {
     margin: auto;
-    background: rgb(255, 255, 255);
-    width: 90%;
+    background: #93bbed;
+    width: auto;
     height: auto;
     padding: 5px;
   }
 .pop{
     display: flex;
+    border:10px solid black;
 }
 
   .popup-arrow {
@@ -42,3 +46,7 @@
   [data-popup='tooltip'].popup-overlay {
     background: transparent;
   }
+
+.butt{
+  margin: 10px;
+}
