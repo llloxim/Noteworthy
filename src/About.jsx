@@ -1,5 +1,5 @@
 import "./About.css";
-import Nav from "./Nav";
+import Nav from "./nav";
 
 import SF from "/SFhall.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader

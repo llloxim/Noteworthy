@@ -33,7 +33,7 @@ function Nav() {
         </ul>
       </nav> */}
 
-      <nav class="bg-white border-gray-200 dark:bg-gray-900">HELLO</nav>
+      <nav class="bg-white border-gray-200 dark:bg-gray-900">HELsLO</nav>
     </>
   );
 }

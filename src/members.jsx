@@ -1,4 +1,4 @@
-import Nav from "./Nav.jsx";
+import Nav from "./nav.jsx";
 import Cards from "./cards.jsx";
 
 function Member() {

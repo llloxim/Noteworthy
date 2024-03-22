@@ -1,7 +1,7 @@
 import About from "./About";
 import "./App.css";
 import Videos from "./Videos";
-import Nav from "./Nav";
+import Nav from "./nav";
 
 function Home() {
   return (
