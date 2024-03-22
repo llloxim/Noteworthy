@@ -39,6 +39,14 @@
   text-align: center;
 }
 
+.grid-item:hover {
+  background-color: rgb(143, 209, 238)
+}
+
+.about-desc {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .sep{
   margin: 6px;
   border: 1px solid #e9e9e9;

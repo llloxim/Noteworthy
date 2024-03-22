@@ -1,5 +1,5 @@
 import './Nav.css'; 
-import logo from "/NW-Logo.png";
+import logo from "/public/NW-Logo-removebg-preview.png";
 import {Link} from 'react-router-dom';
 function Nav() {
 

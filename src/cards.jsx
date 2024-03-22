@@ -16,14 +16,14 @@ pic})=>{
         <Popup trigger={
         <button>
         <div className="itemNoC">
-        <img className="profile" src={"./NW-Logo.png"} alt={"./NW-Logo.png"} />
+        <img className="profile" src={pic} alt={"./NW-Logo.png"} />
         <div className='description'>           
             <h4 className='mtext'>{name}</h4>
             <h4 className='mtext'>Promouns : {pronouns}</h4>
             <h4 className='mtext'>Major/Minor : {majorsminors}</h4>
             <h4 className='mtext'>Semester in Berkeley : {semesterInBerkeley}</h4>
-            <h4 className='mtext'>Semester in Noteworthy :{semesterInNoteworthy}</h4>
-            <h4 className='mtext'>Intrests : {interests}</h4>
+            <h4 className='mtext'>Semester in Noteworthy : {semesterInNoteworthy}</h4>
+            <h4 className='mtext'>Interests : {interests}</h4>
             <h4 className='mtext'>How Was Your Day? : {howWasYourDay}</h4>
         </div>
         </div>
@@ -58,7 +58,7 @@ const Card = ()=>{
     }
     return(
         <div className="classM">
-            <h1 className="card"> Memebers </h1>
+            <h1 className="card"> Members </h1>
             <div className='spacing'>
             {itemList}
             </div>
