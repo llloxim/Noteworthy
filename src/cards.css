@@ -9,6 +9,7 @@
 .profile{
     max-width: 300px;
     max-height: 300px;
+    margin: 20px;
 }
 .spacing{
     display: flex;
@@ -27,6 +28,7 @@
   }
 .pop{
     display: flex;
+    background-color: #93bbed;
 }
 
   .popup-arrow {
@@ -42,3 +44,7 @@
   [data-popup='tooltip'].popup-overlay {
     background: transparent;
   }
+
+.prof{
+  margin: 20px;
+}

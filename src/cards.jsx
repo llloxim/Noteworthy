@@ -14,9 +14,9 @@ howWasYourDay,
 pic})=>{
     return(
         <Popup trigger={
-        <button>
+        <button className='prof'>
         <div className="itemNoC">
-        <img className="profile" src={"./NW-Logo.png"} alt={"./NW-Logo.png"} />
+        <img className="profile" src={pic} alt={"./NW-Logo.png"} />
         <div className='description'>           
             <h4 className='mtext'>{name}</h4>
             <h4 className='mtext'>Promouns : {pronouns}</h4>
@@ -31,7 +31,7 @@ pic})=>{
     
         
         <div className='pop'>
-            <img className="profile" src={"./NW-Logo.png"} alt={"./NW-Logo.png"} />
+            <img className="profile" src={pic} alt={"./NW-Logo.png"} />
             <h2>Bio : {bio}</h2>
         </div>
         </Popup>
