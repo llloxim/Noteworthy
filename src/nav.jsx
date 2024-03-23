@@ -33,7 +33,33 @@ function Nav() {
         </ul>
       </nav> */}
 
-      <nav class="bg-white border-gray-200 dark:bg-gray-900">HELsLO</nav>
+      <nav className="bg-gradient-to-r from-yellow-300 from-20% to-blue-600 to-80% text-white p-7 relative">
+        <div className="container mx-auto flex justify-between items-center">
+          {/* Brand/logo */}
+          <Link to="/" className="font-bold text-xl">
+            Brand
+          </Link>
+
+          {/* Navigation links */}
+          <ul className="flex space-x-4">
+            <li>
+              <Link to="/about" className="hover:text-gray-300">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/gallery" className="hover:text-gray-300">
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link to="/members" className="hover:text-gray-300">
+                Members
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </>
   );
 }

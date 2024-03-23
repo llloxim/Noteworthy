@@ -8,7 +8,7 @@ function Home() {
     <>
       <Nav></Nav>
 
-      <div className="snap-y snap-proximity w-screen h-screen overflow-y-scroll">
+      <div className="snap-y snap-proximity w-screen h-screen pb-8 overflow-y-scroll">
         <section className="snap-always snap-start w-screen h-screen relative">
           <div
             className="w-full h-full bg-cover bg-fixed"

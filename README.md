@@ -13,3 +13,4 @@ TODO:
 - Responsiveness (should be taken of by tailwind css)
 
 - Adjust scroll snapping (only used in Home.jsx currently)
+- nav bar with scroll snapping is weird --> should disappear as you scroll down but it "sticks"
