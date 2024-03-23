@@ -8,6 +8,7 @@ import { SocialIcon } from "react-social-icons";
 function About() {
   return (
     <>
+      <Nav></Nav>
       <div>
         <h1>About Us</h1>
         <h2>

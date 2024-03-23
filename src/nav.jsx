@@ -37,11 +37,14 @@ function Nav() {
         <div className="container mx-auto flex justify-between items-center">
           {/* Brand/logo */}
           <Link to="/" className="font-bold text-xl">
-            Brand
+            <img src={logo} className="logo" alt="logos" />
           </Link>
 
           {/* Navigation links */}
           <ul className="flex space-x-4">
+              <Link to="/" className="hover:text-gray-300">
+                Home
+              </Link>
             <li>
               <Link to="/about" className="hover:text-gray-300">
                 About
