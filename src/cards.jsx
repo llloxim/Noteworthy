@@ -2,6 +2,13 @@ import Info from "./Info.json";
 import "./cards.css";
 import Popup from "reactjs-popup";
 
+const ProfilePreview = ({ name, pic }) => (
+  <div className="profile-preview">
+    <img className="profile" src={pic} alt={name} />
+    <h4 className="mtext">{name}</h4>
+  </div>
+);
+
 const ItemNoC = ({
   name,
   pronouns,
@@ -16,30 +23,24 @@ const ItemNoC = ({
   return (
     <Popup
       trigger={
-        <button className="prof">
-          <div className="itemNoC">
-            <img className="profile" src={pic} alt={"./NW-Logo.png"} />
-            <div className="description">
-              <h4 className="mtext">{name}</h4>
-              <h4 className="mtext">Promouns : {pronouns}</h4>
-              <h4 className="mtext">Major/Minor : {majorsminors}</h4>
-              <h4 className="mtext">
-                Semester in Berkeley : {semesterInBerkeley}
-              </h4>
-              <h4 className="mtext">
-                Semester in Noteworthy : {semesterInNoteworthy}
-              </h4>
-              <h4 className="mtext">Interests : {interests}</h4>
-              <h4 className="mtext">How Was Your Day? : {howWasYourDay}</h4>
-            </div>
-          </div>
-        </button>
+        <div className="itemNoC">
+          <img className="profile" src={pic} alt={name} />
+          <h4 className="mtext">{name}</h4>
+        </div>
       }
       position="center"
+      modal
     >
       <div className="pop">
-        <img className="profile" src={pic} alt={"./NW-Logo.png"} />
-        <h2>Bio : {bio}</h2>
+        <img className="profile" src={pic} alt={name} />
+        <h2>{name}</h2>
+        <h4>Bio: {bio}</h4>
+        <h4>Pronouns: {pronouns}</h4>
+        <h4>Major/Minor: {majorsminors}</h4>
+        <h4>Semester in Berkeley: {semesterInBerkeley}</h4>
+        <h4>Semester in Noteworthy: {semesterInNoteworthy}</h4>
+        <h4>Interests: {interests}</h4>
+        <h4>How Was Your Day?: {howWasYourDay}</h4>
       </div>
     </Popup>
   );

@@ -23,10 +23,18 @@ a:hover {
 }
 */
 
+.flex.space-x-4 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .logo {
   height: 50px;
   will-change: filter;
   transition: filter 300ms;
+}
+
+ul li{
+  padding-left: 20px;
 }
 
 .logo:hover {
