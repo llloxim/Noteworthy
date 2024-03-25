@@ -1,6 +1,7 @@
 import Info from "./Info.json";
 import "./cards.css";
 import Popup from "reactjs-popup";
+import React, { useState } from "react";
 
 const ProfilePreview = ({ name, pic }) => (
   <div className="profile-preview">
@@ -20,6 +21,20 @@ const ItemNoC = ({
   howWasYourDay,
   pic,
 }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const Names = Object.keys(Info);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % Names.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + Names.length) % Names.length);
+  };
+
+  const currentItem = Info[name];
+  const currentIndexName = Names[currentIndex];
+
   return (
     <Popup
       trigger={
@@ -41,6 +56,10 @@ const ItemNoC = ({
         <h4>Semester in Noteworthy: {semesterInNoteworthy}</h4>
         <h4>Interests: {interests}</h4>
         <h4>How Was Your Day?: {howWasYourDay}</h4>
+        <div className="popup-buttons">
+              <button className="prev butt" onClick={() => { handlePrev(); close(); }}>Previous</button>
+              <button className="next butt" onClick={() => { handleNext(); close(); }}>Next</button>
+            </div>
       </div>
     </Popup>
   );
