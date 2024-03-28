@@ -13,4 +13,11 @@ TODO:
 - Responsiveness (should be taken of by tailwind css)
 
 - Adjust scroll snapping (only used in Home.jsx currently)
-- nav bar with scroll snapping is weird --> should disappear as you scroll down but it "sticks"
+
+  - nav bar with scroll snapping is weird --> should disappear as you scroll down but it "sticks"
+  - navbar appears more than once if you use other components so have to fix that as well
+
+- Add a Hire Us page
+
+  - also link it in the navbar
+  - in the about us page, add a link to it as well (either as a button like in their original website or as an a tag)

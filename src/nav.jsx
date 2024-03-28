@@ -33,18 +33,16 @@ function Nav() {
         </ul>
       </nav> */}
 
-      <nav className="bg-gradient-to-r from-yellow-300 from-20% to-blue-600 to-80% text-white p-7 relative">
+      <nav className="bg-gradient-to-r from-yellow-300 from-20% to-blue-600 to-80% text-white p-7">
         <div className="container mx-auto flex justify-between items-center">
-          {/* Brand/logo */}
           <Link to="/" className="font-bold text-xl">
             <img src={logo} className="logo" alt="logos" />
           </Link>
 
-          {/* Navigation links */}
           <ul className="flex space-x-4">
-              <Link to="/" className="hover:text-gray-300">
-                Home
-              </Link>
+            <Link to="/" className="hover:text-gray-300">
+              Home
+            </Link>
             <li>
               <Link to="/about" className="hover:text-gray-300">
                 About
