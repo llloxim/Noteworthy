@@ -17,6 +17,10 @@ TODO:
   - nav bar with scroll snapping is weird --> should disappear as you scroll down but it "sticks"
   - navbar appears more than once if you use other components so have to fix that as well
 
+- In About Us page
+
+  - add box shadow to the 3 columns
+
 - Add a Hire Us page
 
   - also link it in the navbar
