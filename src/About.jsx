@@ -14,7 +14,7 @@ function About() {
           <div className="container mx-auto mt-4 mb-4">
             <div className="text-center">
               <h1 className="text-5xl font-bold">In-vest-ed in A Cappella</h1>
-              <p className="text-lg text-gray-700 mt-5 mb-16">
+              <p className="text-xl text-black-900 mt-5 mb-16">
                 We’re a lower-voices a cappella group known for our fun
                 performances and fresh takes on popular songs! It always feels
                 sunny when we perform, and not just because of our golden vests!
@@ -200,7 +200,7 @@ function About() {
           </div>
         </Carousel> */}
 
-          <div className="mt-4 flex items-center justify-between">
+          <div className="mt-16 flex items-center justify-between">
             <img
               src="Flyer4.png"
               alt="Previous Poster"
