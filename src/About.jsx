@@ -10,12 +10,10 @@ function About() {
     <>
       <Nav></Nav>
       <section className="bg-gray-100 py-16">
-        <div className="container mx-auto">
-          <div className="text-center mb-8">
-            <h1 className="text-5xl font-bold mb-4">
-              In-vest-ed in A Cappella
-            </h1>
-            <p className="text-lg text-gray-700">
+        <div className="container mx-auto mt-4 mb-4">
+          <div className="text-center">
+            <h1 className="text-5xl font-bold">In-vest-ed in A Cappella</h1>
+            <p className="text-lg text-gray-700 mt-5 mb-16">
               We’re a lower-voices a cappella group known for our fun
               performances and fresh takes on popular songs! It always feels
               sunny when we perform, and not just because of our golden vests!
@@ -36,7 +34,8 @@ function About() {
                 show is always fun, and we hope you’ll come! If you cannot make
                 it, you can also watch{" "}
                 <a
-                  href="https://www.instagram.com/cal_noteworthy/"
+                  href="https://www.youtube.com/watch?v=KZe4v5RDWhY&list=PLFs5StaXWEUD76_3SrznJEXLOY_D1qL5R&pp=iAQB"
+                  target="_blank"
                   className="text-blue-500 underline"
                 >
                   videos from Spring 2023.
@@ -80,6 +79,7 @@ function About() {
                 2pm! You can also follow us on{" "}
                 <a
                   href="https://www.instagram.com/cal_noteworthy/"
+                  target="_blank"
                   className="text-blue-500 underline"
                 >
                   Instagram
@@ -87,6 +87,7 @@ function About() {
                 {", "} like us on{" "}
                 <a
                   href="https://www.facebook.com/Noteworthy"
+                  target="_blank"
                   className="text-blue-500 underline"
                 >
                   Facebook
@@ -94,6 +95,7 @@ function About() {
                 {", "}follow us on{" "}
                 <a
                   href="https://www.tiktok.com/@uc_noteworthy"
+                  target="_blank"
                   className="text-blue-500 underline"
                 >
                   TikTok
@@ -101,6 +103,7 @@ function About() {
                 {", "}or subscribe to us on{" "}
                 <a
                   href="https://www.youtube.com/channel/UCDyMtV5cuuJZrg5Wm7VZmMA"
+                  target="_blank"
                   className="text-blue-500 underline"
                 >
                   YouTube
@@ -116,7 +119,10 @@ function About() {
                     href="https://www.instagram.com/cal_noteworthy/"
                     target="_blank"
                   >
-                    <SocialIcon url="https://www.instagram.com/cal_noteworthy/" />
+                    <SocialIcon
+                      url="https://www.instagram.com/cal_noteworthy/"
+                      target="_blank"
+                    />
                   </a>
                 </div>
 
@@ -126,7 +132,10 @@ function About() {
                     href="https://www.facebook.com/Noteworthy"
                     target="_blank"
                   >
-                    <SocialIcon url="https://www.facebook.com/Noteworthy" />
+                    <SocialIcon
+                      url="https://www.facebook.com/Noteworthy"
+                      target="_blank"
+                    />
                   </a>
                 </div>
 
@@ -136,7 +145,10 @@ function About() {
                     href="https://www.tiktok.com/@uc_noteworthy"
                     target="_blank"
                   >
-                    <SocialIcon url="https://www.tiktok.com/@uc_noteworthy" />
+                    <SocialIcon
+                      url="https://www.tiktok.com/@uc_noteworthy"
+                      target="_blank"
+                    />
                   </a>
                 </div>
 
@@ -146,7 +158,10 @@ function About() {
                     href="https://www.youtube.com/channel/UCDyMtV5cuuJZrg5Wm7VZmMA"
                     target="_blank"
                   >
-                    <SocialIcon url="https://www.youtube.com/channel/UCDyMtV5cuuJZrg5Wm7VZmMA" />
+                    <SocialIcon
+                      url="https://www.youtube.com/channel/UCDyMtV5cuuJZrg5Wm7VZmMA"
+                      target="_blank"
+                    />
                   </a>
                 </div>
               </div>
@@ -155,40 +170,60 @@ function About() {
         </div>
       </section>
 
-      {/* ////////////// old code below: */}
+      <section className="bg-gray-100 py-16">
+        <h1 className="text-5xl font-bold mt-4 mb-4">Recent Shows</h1>
+        {/* <p className="text-lg mb-4">
+          Description about recent shows goes here.
+        </p> */}
+        {/* Carousel */}
+        {/* <Carousel className="flyers" showArrows={true}>
+          <div>
+            <img src="Flyer.png" />
+            <p className="legend">Legend 2</p>
+          </div>
+          <div>
+            <img src="Flyer2.png" />
+            <p className="legend">Legend 2</p>
+          </div>
+          <div>
+            <img src="Flyer3.png" />
+            <p className="legend">Legend 2</p>
+          </div>
+          <div>
+            <img src="Flyer7.png" />
+            <p className="legend">Legend 2</p>
+          </div>
+          <div>
+            <img src="Flyer4.png" />
+            <p className="legend">Legend 2</p>
+          </div>
+          <div>
+            <img src="Flyer5.jpg" />
+            <p className="legend">Legend 2</p>
+          </div>
+        </Carousel> */}
 
-      <div className="block">
-        <div className="sep">
-          <h1>Events</h1>
-          <h4>Shows</h4>
-          <Carousel className="flyers" showArrows={true}>
-            <div>
-              <img src="Flyer.png" />
-              <p className="legend">Legend 2</p>
-            </div>
-            <div>
-              <img src="Flyer2.png" />
-              <p className="legend">Legend 2</p>
-            </div>
-            <div>
-              <img src="Flyer3.png" />
-              <p className="legend">Legend 2</p>
-            </div>
-            <div>
-              <img src="Flyer7.png" />
-              <p className="legend">Legend 2</p>
-            </div>
-            <div>
-              <img src="Flyer4.png" />
-              <p className="legend">Legend 2</p>
-            </div>
-            <div>
-              <img src="Flyer5.jpg" />
-              <p className="legend">Legend 2</p>
-            </div>
-          </Carousel>
+        <div className="mt-4 flex items-center justify-between">
+          <img
+            src="Flyer4.png"
+            alt="Previous Poster"
+            className="w-1/6 h-auto rounded-lg"
+          />
+          <div className="w-2/3">
+            {/* Main Carousel Image */}
+            <img
+              src="Flyer3.png"
+              alt="Main Poster"
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
+          <img
+            src="Flyer7.png"
+            alt="Next Poster"
+            className="w-1/6 h-auto rounded-lg"
+          />
         </div>
-      </div>
+      </section>
     </>
   );
 }
