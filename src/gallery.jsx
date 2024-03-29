@@ -2,13 +2,12 @@ import Nav from "./nav";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import "./gallery.css";
-function Gallery() {
+
+function Gallery({ showNav }) {
   return (
     <>
-      <Nav></Nav>
-      <h2>
-          Our Favorite Videos!
-        </h2>
+      {showNav && <Nav />}
+      <h2>Our Favorite Videos!</h2>
       <div className="center">
         <Carousel className="vid" showArrows={true}>
           <div className="video1">

@@ -5,34 +5,6 @@ import { Link } from "react-router-dom";
 function Nav() {
   return (
     <>
-      {/* <nav>
-        <ul className="Nav">
-          <Link to={`/`} className="Toolbar">
-            <img src={logo} className="logo" alt="logos" />
-          </Link>
-          <li className="link">
-            <Link to={`/`} className="Toolbar">
-              Home
-            </Link>
-          </li>
-          <li className="link">
-            <Link to={`/About`} className="Toolbar">
-              About
-            </Link>
-          </li>
-          <li className="link">
-            <Link to={`/Gallery`} className="Toolbar">
-              Gallery
-            </Link>
-          </li>
-          <li className="link">
-            <Link to={`/Members`} className="About">
-              Members
-            </Link>
-          </li>
-        </ul>
-      </nav> */}
-
       <nav className="bg-gradient-to-r from-yellow-300 from-20% to-blue-600 to-80% text-white p-7">
         <div className="container mx-auto flex justify-between items-center">
           <Link to="/" className="font-bold text-xl">

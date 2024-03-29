@@ -20,6 +20,7 @@ TODO:
 - In About Us page
 
   - add box shadow to the 3 columns
+  - Carousel should have image previews for left and right
 
 - Add a Hire Us page
 

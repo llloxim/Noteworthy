@@ -5,7 +5,7 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import { SocialIcon } from "react-social-icons";
 
-function About() {
+function About({ showNav }) {
   // images for the carousel
   const images = [
     { url: "/Flyer.png" },
@@ -50,7 +50,8 @@ function About() {
 
   return (
     <>
-      <Nav></Nav>
+      {showNav && <Nav />}
+
       <div className="bg-gradient-to-b from-blue-400">
         <section className="py-16">
           <div className="container mx-auto mt-4 mb-4">

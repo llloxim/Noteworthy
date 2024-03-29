@@ -1,10 +1,10 @@
 import Nav from "./nav.jsx";
 import Cards from "./cards.jsx";
 
-function Member() {
+function Member({ showNav }) {
   return (
     <>
-      <Nav></Nav>
+      {showNav && <Nav />}
       <Cards></Cards>
     </>
   );
