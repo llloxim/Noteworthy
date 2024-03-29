@@ -1,11 +1,53 @@
 import "./About.css";
+import { useState } from "react";
 import Nav from "./nav";
-
-import SF from "/SFhall.jpg";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import { RxDotFilled } from "react-icons/rx";
 import { SocialIcon } from "react-social-icons";
+
 function About() {
+  // images for the carousel
+  const images = [
+    { url: "/Flyer.png" },
+    { url: "/Flyer2.png" },
+    { url: "/Flyer3.png" },
+    { url: "/Flyer4.png" },
+    { url: "/Flyer5.jpg" },
+    { url: "/Flyer6.jpg" },
+    { url: "/Flyer7.png" },
+  ];
+
+  const [currIndex, setCurrIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  const prevImage = () => {
+    setIsTransitioning(true);
+    setTimeout(() => {
+      const isFirstImage = currIndex === 0;
+      const newIndex = isFirstImage ? images.length - 1 : currIndex - 1;
+      setCurrIndex(newIndex);
+      setIsTransitioning(false);
+    }, 500);
+  };
+
+  const nextImage = () => {
+    setIsTransitioning(true);
+    setTimeout(() => {
+      const isLastImage = currIndex === images.length - 1;
+      const newIndex = isLastImage ? 0 : currIndex + 1;
+      setCurrIndex(newIndex);
+      setIsTransitioning(false);
+    }, 500);
+  };
+
+  const goToImage = (imageIndex) => {
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setCurrIndex(imageIndex);
+      setIsTransitioning(false);
+    }, 500);
+  };
+
   return (
     <>
       <Nav></Nav>
@@ -170,55 +212,39 @@ function About() {
           </div>
         </section>
 
-        <section className="py-16">
-          <h1 className="text-5xl font-bold mt-4 mb-4">Recent Shows</h1>
-          {/* Carousel */}
-          {/* <Carousel className="flyers" showArrows={true}>
-          <div>
-            <img src="Flyer.png" />
-            <p className="legend">Legend 2</p>
-          </div>
-          <div>
-            <img src="Flyer2.png" />
-            <p className="legend">Legend 2</p>
-          </div>
-          <div>
-            <img src="Flyer3.png" />
-            <p className="legend">Legend 2</p>
-          </div>
-          <div>
-            <img src="Flyer7.png" />
-            <p className="legend">Legend 2</p>
-          </div>
-          <div>
-            <img src="Flyer4.png" />
-            <p className="legend">Legend 2</p>
-          </div>
-          <div>
-            <img src="Flyer5.jpg" />
-            <p className="legend">Legend 2</p>
-          </div>
-        </Carousel> */}
+        <section className="pt-16 pb-32">
+          <h1 className="text-5xl font-bold">Recent Shows</h1>
 
-          <div className="mt-16 flex items-center justify-between">
-            <img
-              src="Flyer4.png"
-              alt="Previous Poster"
-              className="w-1/6 h-auto rounded-lg"
-            />
-            <div className="w-2/3">
-              {/* Main Carousel Image */}
-              <img
-                src="Flyer3.png"
-                alt="Main Poster"
-                className="w-full h-auto rounded-lg"
-              />
+          <div className="max-w-[700px] h-[1000px] w-full m-auto py-16 px-4 relative group">
+            <div
+              className={`w-full h-full bg-center bg-contain bg-no-repeat duration-500 transition-opacity ${
+                isTransitioning ? "opacity-0" : "opacity-100"
+              }`}
+              style={{
+                backgroundImage: `url(${images[currIndex].url})`,
+              }}
+            ></div>
+
+            <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+              <BsChevronCompactLeft onClick={prevImage} size={30} />
             </div>
-            <img
-              src="Flyer7.png"
-              alt="Next Poster"
-              className="w-1/6 h-auto rounded-lg"
-            />
+            <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+              <BsChevronCompactRight onClick={nextImage} size={30} />
+            </div>
+
+            <div className="flex top-4 py-4 justify-center">
+              {images.map((image, index) => (
+                <div
+                  key={index}
+                  onClick={() => goToImage(index)}
+                  className={`text-3xl cursor-pointer ${
+                    index === currIndex ? "text-yellow-500" : "text-black"
+                  }`}
+                >
+                  <RxDotFilled />
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       </div>
