@@ -80,7 +80,7 @@ function About({ showNav }) {
                   <a
                     href="https://www.youtube.com/watch?v=KZe4v5RDWhY&list=PLFs5StaXWEUD76_3SrznJEXLOY_D1qL5R&pp=iAQB"
                     target="_blank"
-                    className="text-blue-500 underline"
+                    className="text-yellow-500"
                   >
                     videos from Spring 2023.
                   </a>
@@ -124,7 +124,7 @@ function About({ showNav }) {
                   <a
                     href="https://www.instagram.com/cal_noteworthy/"
                     target="_blank"
-                    className="text-blue-500 underline"
+                    className="text-yellow-500"
                   >
                     Instagram
                   </a>
@@ -132,7 +132,7 @@ function About({ showNav }) {
                   <a
                     href="https://www.facebook.com/Noteworthy"
                     target="_blank"
-                    className="text-blue-500 underline"
+                    className="text-yellow-500"
                   >
                     Facebook
                   </a>
@@ -140,7 +140,7 @@ function About({ showNav }) {
                   <a
                     href="https://www.tiktok.com/@uc_noteworthy"
                     target="_blank"
-                    className="text-blue-500 underline"
+                    className="text-yellow-500"
                   >
                     TikTok
                   </a>
@@ -148,7 +148,7 @@ function About({ showNav }) {
                   <a
                     href="https://www.youtube.com/channel/UCDyMtV5cuuJZrg5Wm7VZmMA"
                     target="_blank"
-                    className="text-blue-500 underline"
+                    className="text-yellow-500"
                   >
                     YouTube
                   </a>

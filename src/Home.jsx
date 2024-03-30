@@ -3,6 +3,7 @@ import About from "./About";
 import "./App.css";
 import Videos from "./Videos";
 import Nav from "./nav";
+import Gallery from "./gallery";
 
 function Home() {
   return (
@@ -35,19 +36,11 @@ function Home() {
 
       <div className="flex flex-col">
         {/* <section className="flex-1 snap-always snap-center bg-teal-200"> */}
-        <section className="bg-teal-200">
-          <div className="flex justify-center items-center h-full">
-            {/* <Videos showNav={false} /> */}
-            <p className="text-6xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
+        <section className="bg-gray-200">
+          {/* <div className="flex justify-center items-center h-full"> */}
+          {/* <Videos showNav={false} /> */}
+          <Gallery showNav={false} />
+          {/* </div> */}
         </section>
       </div>
     </>

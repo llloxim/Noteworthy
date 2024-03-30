@@ -42,8 +42,8 @@ function Gallery({ showNav }) {
     <>
       {showNav && <Nav />}
 
-      <div className="bg-gradient-to-b from-blue-400">
-        <section className="pt-16 pb-32">
+      <div className="bg-gradient-to-b from-amber-200 pb-8">
+        <section className="pt-16 pb-48">
           <h1 className="text-5xl font-bold mb-8">Our Favorite Videos</h1>
 
           <div className="max-w-[1080px] h-[800px] w-full m-auto py-16 px-4 relative group">
@@ -68,7 +68,7 @@ function Gallery({ showNav }) {
               <BsChevronCompactRight onClick={nextImage} size={30} />
             </div>
 
-            <div className="flex top-4 py-20 justify-center">
+            <div className="flex top-4 pt-20 pb-8 justify-center">
               {videos.map((image, index) => (
                 <div
                   key={index}
@@ -80,6 +80,20 @@ function Gallery({ showNav }) {
                   <RxDotFilled />
                 </div>
               ))}
+            </div>
+
+            <div className="flex justify-center">
+              <p>
+                Find your favorite video on our{" "}
+                <a
+                  href="https://www.youtube.com/channel/UCDyMtV5cuuJZrg5Wm7VZmMA"
+                  target="_blank"
+                  className="text-yellow-500"
+                >
+                  YouTube channel
+                </a>
+              </p>
+              {"!"}
             </div>
           </div>
         </section>
