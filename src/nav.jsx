@@ -17,7 +17,12 @@ function Nav() {
             </Link>
             <li>
               <Link to="/about" className="hover:text-gray-300">
-                About
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link to="/members" className="hover:text-gray-300">
+                Members
               </Link>
             </li>
             <li>
@@ -26,8 +31,8 @@ function Nav() {
               </Link>
             </li>
             <li>
-              <Link to="/members" className="hover:text-gray-300">
-                Members
+              <Link to="/hire-us" className="hover:text-gray-300">
+                Hire Us
               </Link>
             </li>
           </ul>

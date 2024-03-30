@@ -4,6 +4,7 @@ import Home from "./Home";
 import About from "./About";
 import Gallery from "./gallery";
 import Members from "./members";
+import HireUs from "./HireUs";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/About" element={<About showNav={true} />} />
           <Route path="/Gallery" element={<Gallery showNav={true} />} />
           <Route path="/Members" element={<Members showNav={true} />} />
+          <Route path="/HireUs" element={<HireUs showNav={true} />} />
         </Routes>
       </BrowserRouter>
     </>
