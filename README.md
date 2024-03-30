@@ -26,3 +26,6 @@ TODO:
 
   - also link it in the navbar
   - in the about us page, add a link to it as well (either as a button like in their original website or as an a tag)
+
+- In Gallery page
+  - maybe we can make the carousel a component and use that instead of creating another one
