@@ -20,16 +20,19 @@ const ItemNoC = ({
   bio,
   howWasYourDay,
   pic,
+  close
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const Names = Object.keys(Info);
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % Names.length);
+    const currentIndex = Names.indexOf(name);
+    setCurrentIndex((prevIndex) => (currentIndex + 1) % Names.length);
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + Names.length) % Names.length);
+    const currentIndex = Names.indexOf(name);
+    setCurrentIndex((prevIndex) => (currentIndex - 1 + Names.length) % Names.length);
   };
 
   const currentItem = Info[name];
@@ -55,11 +58,7 @@ const ItemNoC = ({
         <h4>Semester in Berkeley: {semesterInBerkeley}</h4>
         <h4>Semester in Noteworthy: {semesterInNoteworthy}</h4>
         <h4>Interests: {interests}</h4>
-        <h4>How Was Your Day?: {howWasYourDay}</h4>
-        <div className="popup-buttons">
-              <button className="prev butt" onClick={() => { handlePrev(); close(); }}>Previous</button>
-              <button className="next butt" onClick={() => { handleNext(); close(); }}>Next</button>
-            </div>
+        <h4>How Was Your Day? {howWasYourDay}</h4>
       </div>
     </Popup>
   );
@@ -73,6 +72,7 @@ const Card = () => {
     const info = Info[name];
     itemList.push(
       <ItemNoC
+        key={i}
         name={info.name}
         pronouns={info.pronouns}
         majorsminors={info.majorsminors}
@@ -82,6 +82,7 @@ const Card = () => {
         bio={info.bio}
         howWasYourDay={info.howWasYourDay}
         pic={info.pic}
+        
       />
     );
   }
