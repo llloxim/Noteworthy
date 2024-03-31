@@ -2,6 +2,7 @@ import Info from "./Info.json";
 import "./cards.css";
 import Popup from "reactjs-popup";
 import React, { useState } from "react";
+import { Carousel } from "react-responsive-carousel";
 
 const ProfilePreview = ({ name, pic }) => (
   <div className="profile-preview">
@@ -20,7 +21,8 @@ const ItemNoC = ({
   bio,
   howWasYourDay,
   pic,
-  close
+  close,
+  closeModal,
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const Names = Object.keys(Info);
@@ -48,6 +50,7 @@ const ItemNoC = ({
       }
       position="center"
       modal
+      onClose={closeModal}
     >
       <div className="pop">
         <img className="profile" src={pic} alt={name} />
@@ -65,14 +68,17 @@ const ItemNoC = ({
 };
 
 const Card = () => {
-  const itemList = [];
-  const Names = Object.keys(Info);
-  for (let i = 0; i < Names.length; i++) {
-    const name = Names[i];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const closeModal = () => {
+    setCurrentIndex(0);
+  };
+
+  const itemList = Object.keys(Info).map((name, index) => {
     const info = Info[name];
-    itemList.push(
+    return (
       <ItemNoC
-        key={i}
+        key={index}
         name={info.name}
         pronouns={info.pronouns}
         majorsminors={info.majorsminors}
@@ -82,10 +88,13 @@ const Card = () => {
         bio={info.bio}
         howWasYourDay={info.howWasYourDay}
         pic={info.pic}
-        
+        currentIndex={currentIndex}
+        setCurrentIndex={setCurrentIndex}
+        closeModal={closeModal}
       />
     );
-  }
+  });
+
   return (
     <div className="classM">
       <h1 className="card"> Members </h1>
