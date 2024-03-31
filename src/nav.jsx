@@ -30,11 +30,6 @@ function Nav() {
                 Gallery
               </Link>
             </li>
-            <li>
-              <Link to="/hire-us" className="hover:text-gray-300">
-                Hire Us
-              </Link>
-            </li>
           </ul>
         </div>
       </nav>
